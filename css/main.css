@@ -272,6 +272,16 @@ section.interesting-honey .card-facts {
     background-size: 45% 100%;
 }
 
+@media (max-width: 550px) {
+    section.interesting-honey .card-facts {
+        background-position: 135% 168%;
+        background-size: 68% auto;
+        background-image: url(../images/landingpage/justabee.png);
+    }
+
+}
+
+
 section.interesting-honey .card-recipes {
     background-color: #ffd08a;
     background-image: url(../images/landingpage/honeynade.png);

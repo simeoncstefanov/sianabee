@@ -3,6 +3,10 @@ html, body
     overflow-x: hidden;
 }
 
+main {
+    background-color: rgb(255 234 234);
+}
+
 .nomargin
 {
     margin-right: 0px !important;
@@ -20,6 +24,23 @@ p {
     font-size: 18px; 
 }
 
+
+@font-face {
+    font-family: 'FuturaPT';
+    src: url('../fonts/futuraptbold-webfont.woff2') format('woff2'),
+         url('../fonts/futuraptbold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    src: url('../fonts/futuraptheavy-webfont.woff2') format('woff2'),
+         url('../futuraptheavy-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
 
 /* Navigation and header START*/
 .nav-item {
@@ -45,16 +66,6 @@ p {
     header.navbar {
         margin: 0 10%;
     }
-}
-
-
-main {
-    background-color: rgb(255 234 234);
-    background-image: url(../images/bg-blob5.png);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 72% auto;
-    opacity: 1;
 }
 
 @media (min-width: 1000px) {
@@ -146,166 +157,41 @@ p.page-heading-text {
     transition: all .4s ease-in-out;
     color: black;
 }
-/* Landing page END*/
 
-/* About us section START*/
-
-.about-us 
-{
-    background-color: rgb(255, 255, 255);
-    background-image: url(../images/honey-comb4.png), url(../images/honey-comb5.png);
-    background-position: 91% 0%, 7px 100%;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 16% auto, 10% auto;
+section.heading-title {
+    height: 350px;
+    width: 100%;
+    margin-top: 0px;
 }
 
-@media (max-width: 1400px) {
-    .about-us {
-        background-position: 105% 1%, 7px 100%;
-        background-size: 27% auto, 150px auto;
-    }
-
-    section.history {
-        background-color: #ffeaea;
-        background-image: url(../images/bg-blob6.png);
-        background-repeat: no-repeat;
-        background-position: top left;
+@media (min-width: 1000px) {
+    section.heading-title {
+        margin-top: 130px;
     }
 }
 
+.heading-title::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(../images/history/headerhistory.jpg);
+    background-size: 100% auto;
+    background-position: 100% 50%;
+    filter: brightness(35%);
+  }
 
-.about-us-heading p 
-{
-    color: #a4670c;
-    font-weight: 1000;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.about-us-heading h3 {
-    font-family: "Nunito", arial, sans-serif;
-    font-weight: 900;
-    font-size: 48px;
-}
-
-section.about-us .info-card {
-    background-color: #ffeaea;
-    border-radius: 50px;
-    -webkit-box-shadow: 0px 0px 42px -5px rgba(0,0,0,0.24); 
-    box-shadow: 0px 0px 42px -5px rgba(0,0,0,0.24);
-}
-
-section.about-us .info-card h4 {
-    font-family: "Nunito", arial, sans-serif;
-    font-weight: bolder;
-    font-size: 28px;
-}
-/* About us section END*/
-
-/* History START */
-section.history {
-    background-color: #ffeaea;
-    background-image: url(../images/bg-blob6.png);
-    background-repeat: no-repeat;
-    background-position: -10% 45%;
-    background-size: 37% auto;
-}
-
-@media (max-width: 1200px) {
-    section.history  {
-        background-position: -58% 16%;
-        background-size: 70% auto;
-    }
-
-}
-
-/* History END */
-
-
-/* information START */
-
-section.contact-section {
-    margin-top: 75px;
+.heading-title .title-container {
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    text-align: center;
     position: relative;
 }
 
-section.contact-section h4 {
-    font-family: "Ubuntu", arial;
-    font-weight: bolder;
-}
-
-section.contact-section h5 {
-    font-family: "Ubuntu", arial;
-    color: gray;
-    font-weight: bold;
-}
-
-section.contact-section h2 {
-    color: #cb7a00;
-}
-
-section.contact-section::after{
-    content:'';
-    width: 85%;
-    height: 3px;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    margin-left: -42.5%;
-    border-bottom: dashed #ffdbdb 5px;
-    
-}
-/* information END */
-
-/* interesting */
-
-section.interesting-honey {
-    margin-top: 100px;
-}
-
-section.interesting-honey .card-honey {
-    height: 350px;
-    border-radius: 100px;
-    background-repeat: no-repeat;
-    background-position: 101% 100%;
-    
-}
-
-section.interesting-honey .card-facts {
-    background-color: #ffdbdb; 
-    background-image: url(../images/landingpage/bee-collecting-polen.png);
-    background-size: 45% 100%;
-}
-
-@media (max-width: 768px) {
-    section.interesting-honey .card-facts {
-        background-position: 135% 168%;
-        background-size: 68% auto;
-        background-image: url(../images/landingpage/justabee.png);
+@media (max-width: 600px) {
+    .heading-title::before {
+        background-size: 150% auto;
+        background-position: 35% 50%;
     }
-
-}
-
-@media (max-width: 576px) {
-    section.interesting-honey .card-facts {
-        background-image: none;
-    }
-}
-
-
-section.interesting-honey .card-recipes {
-    background-color: #ffd08a;
-    background-image: url(../images/landingpage/honeynade.png);
-    background-size: 45% auto;
-}
-
-section.interesting-honey .card-faq {
-    background-color: #ffbb50; 
-    border-radius: 100px; 
-    height: 100%;
-    background-image: url(../images/landingpage/Beekeeper.webp);
-    background-repeat: no-repeat;
-    background-size: 60% auto;
-    background-position: 0% 108%;
-
 }

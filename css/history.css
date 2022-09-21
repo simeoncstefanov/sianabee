@@ -1,0 +1,91 @@
+/* section.heading-title {
+    background-image: url(../images/history/headerhistory.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 70%;
+    background-size: 100% auto;
+}
+
+
+section.heading-title::before {
+    filter: brightness(50%);
+}
+
+@media (max-width: 600px) {
+    section.heading-title {
+        background-position: top left;
+    }
+}
+*/
+@media (min-width: 1000px) {
+    section.heading-title {
+        margin-top: 115px;
+    }
+}
+
+section.heading-title h1 {
+    font-family: 'Nunito', arial;
+    font-weight: bolder;
+    font-size: 72px;
+    color:white;
+} 
+
+html, body {
+    overflow: unset;
+}
+
+.timeline-container {
+    top: 30%;
+}
+
+.timeline {
+    max-width: 980px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.timeline-nav {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    transition: all 0.7s;
+
+}
+
+.timeline-nav ul {
+    list-style: none;
+    list-style-position: inside;
+    margin: 15px 0;
+    font-size: 28px;
+}
+
+.timeline-nav ul li {
+    margin: 15px 0;
+    padding-left: 0;
+    list-style-type: none;
+    color: #bfc1c3;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-family: 'FuturaPT', sans-serif;
+}
+
+.timeline-nav ul li.active {
+    font-weight: bolder;
+    color: #a4670c;
+    border-bottom: 1px dotted transparent;
+    transform: scale(1.2);
+}
+
+.timeline-nav ul li:hover {
+    color: #000;
+} 
+
+.year-container h3 {
+    font-family: 'Nunito', arial;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.year-container:nth-child(n+2) {
+    margin-top: 75px;
+}

@@ -1,0 +1,143 @@
+/* .image-container {
+    padding: 25px;
+    padding-bottom: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 15px;
+    max-height:600px;
+}
+
+.image-card {
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.image-card.orange1 {
+    background-color: #ffd08a;
+}
+
+.image-card.orange2 {
+    background-color: #ffbb50;
+}
+
+.image-card.pink1 {
+    background-color: #eaa6a6;
+}
+
+.image-card h5 {
+    padding-left: 25px;
+    font-family: 'Ubuntu', arial;
+    font-weight: bolder;
+}
+
+.image-caption {
+    height: 40px;
+    line-height: 40px;
+}
+
+.image-caption i {
+    font-size: 15px;
+    color: rgb(129, 84, 0);
+} */
+
+main {
+    height: auto;
+    padding-bottom: 500px;
+}
+
+.hex-wrapper {
+    display: flex; /* we will talk about this later ... */
+    width: auto;
+    height: auto;
+    --s: 350px;  /* size  */
+    --m: 6px;   /* margin */
+    --f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px);  /* */
+}
+
+@media (max-width: 1250px)
+{
+    .hex-wrapper {
+        --s: 250px;  /* size  */
+        --m: 6px;   /* margin */
+    }
+}
+
+@media (max-width: 500px)
+{
+    .hex-wrapper {
+        --s: 215px;  /* size  */
+        --m: 6px;   /* margin */
+    }
+}
+
+.hex-container {
+    font-size: 0; /* disable white space between inline block element */
+}
+
+.hex-container .hex-cell {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s) * 1.1547);
+    display: inline-block;
+    font-size: initial; /* we reset the font-size if we want to add some content */
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    cursor: pointer;
+    margin-bottom: calc(var(--m) - var(--s) * 0.2886);
+    position: relative;
+}
+
+.hex-container::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 100%;
+    shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),#000 0 var(--f));
+}
+
+.hex-bg {
+    background-color: rgba(255, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: 210% auto;
+    background-position: center center;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.hex-cell img {
+    width: 250%;
+    cursor: pointer;
+}
+
+.hex-cell:hover .hex-bg {
+    filter: brightness(35%);
+}
+
+.hex-cell h3 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Ubuntu", arial;
+    font-weight: bolder;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.5s;
+}
+
+.hex-cell:hover h3 {
+    opacity: 1;
+}
+
+.hex-caption {
+    height: 100%;
+    position: relative;
+}
+
+.hex-main {
+    padding-bottom: 300px;
+}

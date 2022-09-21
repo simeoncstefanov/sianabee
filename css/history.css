@@ -16,22 +16,6 @@ section.heading-title::before {
     }
 }
 */
-@media (min-width: 1000px) {
-    section.heading-title {
-        margin-top: 115px;
-    }
-}
-
-section.heading-title h1 {
-    font-family: 'Nunito', arial;
-    font-weight: bolder;
-    font-size: 72px;
-    color:white;
-} 
-
-html, body {
-    overflow: unset;
-}
 
 .timeline-container {
     top: 30%;

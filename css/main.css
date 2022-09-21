@@ -13,6 +13,12 @@ main {
     margin-left: 0px !important;
 }
 
+.nopadding
+{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
 .flip
 {
     transform: scaleY(-1);
@@ -170,17 +176,6 @@ section.heading-title {
     }
 }
 
-.heading-title::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-image: url(../images/history/headerhistory.jpg);
-    background-size: 100% auto;
-    background-position: 100% 50%;
-    filter: brightness(35%);
-  }
-
 .heading-title .title-container {
     z-index: 10;
     width: 100%;
@@ -189,9 +184,19 @@ section.heading-title {
     position: relative;
 }
 
-@media (max-width: 600px) {
-    .heading-title::before {
-        background-size: 150% auto;
-        background-position: 35% 50%;
+@media (min-width: 1000px) {
+    section.heading-title {
+        margin-top: 115px;
     }
+}
+
+section.heading-title h1 {
+    font-family: 'Nunito', arial;
+    font-weight: bolder;
+    font-size: 72px;
+    color:white;
+} 
+
+html, body {
+    overflow: unset;
 }

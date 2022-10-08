@@ -34,12 +34,15 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="opened fa-solid fa-xmark"></i>
+                    <i class="closed fa-solid fa-bars"></i>
+                </span>
             </button>
-            <nav class="collapse navbar-collapse ms-5 col-md-8" id="navbarSupportedContent">
+            <nav class="collapse navbar-collapse ms-lg-5 ms-4 col-md-8" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item me-4">
-                        <a class="nav-link active" aria-current="page" href="#">Начало</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Начало</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="history.html">За нас</a>
@@ -50,21 +53,18 @@
                             Полезно
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="recipes.html">Рецепти</a></li>
+                            <li><a class="dropdown-item" href="honey.html">За меда</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Въпроси</a></li>
                         </ul>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Галерия</a>
+                        <a class="nav-link" href="gallery.html" tabindex="-1" aria-disabled="true">Галерия</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-flex mb-3 mb-lg-0">
+                    <button class="nav-btn me-3"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="nav-btn"><i class="fa-solid fa-user"></i></button>
                 </form>
             </nav>
         </div>
@@ -125,7 +125,7 @@
 
     <section class="about-us mt-5">
         <div class="container mb-3">
-            <div class="row about-us-heading">  
+            <div class="row nomargin about-us-heading">  
                 <div class="d-flex justify-content-center">
                     <p class="d-block">КОИ СМЕ НИЕ?</p>
                 </div>
@@ -205,7 +205,7 @@
                     </g>
                 </svg>
             </div>
-            <div class="ms-4 col-xl-5 px-5">
+            <div class="ms-4 col-xl-5 px-5 nomargin">
                 <div class="history-text">
                     <div class="mb-3">
                         <div class="row about-us-heading mt-5">

@@ -49,6 +49,50 @@ p {
 }
 
 /* Navigation and header START*/
+
+.nav-btn, .navbar-toggler {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffdbdb;
+    border: unset;
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.41); 
+    box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.41);
+}
+
+.navbar-toggler-icon {
+    background-image: unset !important;
+}
+
+.navbar-toggler-icon i {
+    font-size: 28px;
+}
+
+.navbar-toggler-icon.collapsed i.closed {
+    display: none;
+    font-size: 28px;
+}
+
+.navbar-toggler-icon.collapsed i.opened {
+    display: block;
+    font-size: 28px;
+}
+
+.navbar-toggler-icon:not(.collapsed) i.closed {
+    display: none;
+    font-size: 28px;
+}
+
+.navbar-toggler-icon:not(.collapsed) i.opened {
+    display: block;
+    font-size: 28px;
+}
+
+.nav-btn i {
+    font-size: 25px;
+    color: #6b3232
+}
+
 .nav-item {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Siana Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/recipes.css">
+
+    <link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="css/fontawesome/css/solid.min.css" rel="stylesheet">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slider/flickity.css">
+    <script src="js/slider-flickity/flickity.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light py-0 position-relative">
+        <div class="container-fluid navbar-container">
+            <a class="navbar-brand" href="#">
+                <img width="200" height="80" class="d-inline-block align-text-top" src="misc/looo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse ms-5 col-md-8" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active" aria-current="page" href="index.html">Начало</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="history.html">За нас</a>
+                    </li>
+                    <li class="nav-item me-4 dropdown">
+                        <a class="nav-link dropdown-toggle" href="history.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Полезно
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="recipes.html">Рецепти</a></li>
+                            <li><a class="dropdown-item" href="honey.html">За меда</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Въпроси</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="gallery.html" tabindex="-1" aria-disabled="true">Галерия</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <section class="heading-title position-relative d-flex flex-column justify-content-center">
+        <div class="title-container text-center">
+            <h1>Полезни рецепти</h1>    
+        </div>
+    </section>
+
+    <style>
+        
+        .heading-title::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image: url(images/recipes/recipeheader.jpg);
+            background-size: 100% auto;
+            background-position: 100% 50%;
+            filter: brightness(35%);
+        }
+
+        @media (max-width: 600px) {
+            .heading-title::before {
+                background-size: 200% auto;
+                background-position: 35% 50%;
+            }
+        }
+        
+    </style>
+    <main class="pt-5">
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="recipe-card">
+                        <aside>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/oatmeal.jpg" alt="Chai Oatmeal" />
+                            <a href="#" class="button"><span class="icon icon-play"><i class="fa-solid fa-play"></i></span></a>   
+                        </aside>   
+                        <article>
+                            <h2>Мюсли</h2>
+                            <h3>Закуска</h3>
+                    
+                            <ul>
+                                <li><span class="icon icon-clock"></span><span><i class="fa-regular fa-clock"></i> 15 min</span></li>
+                                <li><span class="icon icon-level"></span><span><i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Beginner level</span></li>
+                                <li><span class="icon icon-calories"></span><span><i class="fa-solid fa-utensils"></i> 248 kcal</span></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at elit varius, ultricies arcu in, imperdiet 
+                                lacus. Nam a rhoncus felis, at lobortis mauris. Mauris a lorem in augue dictum luctus a at turpis. Curabitur massa diam, 
+                                ultricies vel semper a, cursus in nisi. Morbi vel lorem eget enim hendrerit volutpat sit amet non massa. In pulvinar justo
+                                 quis leo dignissim, ut auctor odio lobortis. Duis dictum lorem eget lacinia feugiat. Fusce dapibus neque ut libero feugiat
+                                  ultricies. Phasellus feugiat hendrerit est, vitae posuere ante 
+                                vehicula vitae. Phasellus et euismod tellus. Maecenas vel nibh metus.</p>
+                            <p class="ingredients"><span>Ingredients:&nbsp;</span>Milk, salt, coriander, cardamom, cinnamon, turmeric, honey, vanilla extract, regular oats, oat bran.</p>
+                    
+                        </article>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="recipe-card">
+                        <aside>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/oatmeal.jpg" alt="Chai Oatmeal" />
+                            <a href="#" class="button"><span class="icon icon-play"><i class="fa-solid fa-play"></i></span></a>   
+                        </aside>   
+                        <article>
+                            <h2>Мюсли</h2>
+                            <h3>Закуска</h3>
+                    
+                            <ul>
+                                <li><span class="icon icon-clock"></span><span><i class="fa-regular fa-clock"></i> 15 min</span></li>
+                                <li><span class="icon icon-level"></span><span><i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Beginner level</span></li>
+                                <li><span class="icon icon-calories"></span><span><i class="fa-solid fa-utensils"></i> 248 kcal</span></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at elit varius, ultricies arcu in, imperdiet 
+                                lacus. Nam a rhoncus felis, at lobortis mauris. Mauris a lorem in augue dictum luctus a at turpis. Curabitur massa diam, 
+                                ultricies vel semper a, cursus in nisi. Morbi vel lorem eget enim hendrerit volutpat sit amet non massa. In pulvinar justo
+                                 quis leo dignissim, ut auctor odio lobortis. Duis dictum lorem eget lacinia feugiat. Fusce dapibus neque ut libero feugiat
+                                  ultricies. Phasellus feugiat hendrerit est, vitae posuere ante 
+                                vehicula vitae. Phasellus et euismod tellus. Maecenas vel nibh metus.</p>
+                            <p class="ingredients"><span>Ingredients:&nbsp;</span>Milk, salt, coriander, cardamom, cinnamon, turmeric, honey, vanilla extract, regular oats, oat bran.</p>
+                    
+                        </article>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="recipe-card">
+                        <aside>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/oatmeal.jpg" alt="Chai Oatmeal" />
+                            <a href="#" class="button"><span class="icon icon-play"><i class="fa-solid fa-play"></i></span></a>   
+                        </aside>   
+                        <article>
+                            <h2>Мюсли</h2>
+                            <h3>Закуска</h3>
+                    
+                            <ul>
+                                <li><span class="icon icon-clock"></span><span><i class="fa-regular fa-clock"></i> 15 min</span></li>
+                                <li><span class="icon icon-level"></span><span><i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Beginner level</span></li>
+                                <li><span class="icon icon-calories"></span><span><i class="fa-solid fa-utensils"></i> 248 kcal</span></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at elit varius, ultricies arcu in, imperdiet 
+                                lacus. Nam a rhoncus felis, at lobortis mauris. Mauris a lorem in augue dictum luctus a at turpis. Curabitur massa diam, 
+                                ultricies vel semper a, cursus in nisi. Morbi vel lorem eget enim hendrerit volutpat sit amet non massa. In pulvinar justo
+                                 quis leo dignissim, ut auctor odio lobortis. Duis dictum lorem eget lacinia feugiat. Fusce dapibus neque ut libero feugiat
+                                  ultricies. Phasellus feugiat hendrerit est, vitae posuere ante 
+                                vehicula vitae. Phasellus et euismod tellus. Maecenas vel nibh metus.</p>
+                            <p class="ingredients"><span>Ingredients:&nbsp;</span>Milk, salt, coriander, cardamom, cinnamon, turmeric, honey, vanilla extract, regular oats, oat bran.</p>
+                    
+                        </article>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>
+
